@@ -1,11 +1,21 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import poolShark from '../assets/MyKin/poolShark.jpg';
+import Roy from '../assets/RoyRecommends/InputController1.jpg';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const pageTitle = "Kylan Curran";
 ---
+<Layout pageTitle={pageTitle}>
+  <div class="card-container">
+    <a href="/" class="card">
+      <Image src={poolShark} alt="MyKin project" />
+      <div class="card-title">MyKin</div>
+    </a>
 
-<Layout>
-	<Welcome />
+    <a href="/" class="card">
+      <Image src={Roy} alt="Robot Controller project" />
+      <div class="card-title">Roy Recommends</div>
+    </a>
+  </div>
 </Layout>

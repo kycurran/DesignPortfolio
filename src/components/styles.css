@@ -1,0 +1,151 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  background-color: #F2F2F2;
+}
+
+/* BODY LAYOUT */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+  max-width: 80%; /* keeps content responsive and centered */
+}
+
+/* NAV BAR */
+.nav-bar ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  width: 100%;
+  margin: 0px 0 0; /* top margin above nav */
+  padding: 0;
+  gap: 50px; /* space between links */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #551A1A; /* #8ABF99; */
+  font-family: "dynapuff-condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+}
+
+/* MAIN CONTENT */
+main {
+  flex: 1;
+  width: 100%;
+  text-align: center;
+}
+
+/* HEADINGS */
+h1 {
+  color: #551A1A;
+  font-family: "cofo-raffine", sans-serif;
+  font-weight: normal;
+  font-size: 5em;
+  margin: 20px 0 0 20px; /* offset slightly to the left */
+  text-align: left; /* stays left-aligned */
+}
+
+h2 {
+  color: inherit;
+  text-align: center;
+  font-family: "kudryashev-d-contrast-sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* PARAGRAPHS */
+p {
+  color: inherit;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  margin-top: 40px; /* adds space above paragraphs */
+  line-height: 1.8; /* increases line spacing */
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto; /* centers the text block */
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: inherit;
+  color: inherit;
+  margin-top: 20px;
+  font-size: 0.9em;
+  width: 100%;
+}
+
+
+/* IMAGES */
+/* IMAGE CARD GRID CONTAINER */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* responsive columns */
+  gap: 30px; /* space between cards */
+  padding: 40px 0;
+  width: 100%;
+  justify-items: center;
+}
+
+/* INDIVIDUAL CARD */
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-decoration: none; /* removes underline when wrapped in <a> */
+  color: inherit;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+/* IMAGE INSIDE CARD */
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* OVERLAY TEXT */
+.card-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  font-family: "kudryashev-d-contrast-sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  font-style: normal;
+  text-align: center;
+  padding: 15px;
+}
+
+/* HOVER EFFECTS */
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
