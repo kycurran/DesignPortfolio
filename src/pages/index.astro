@@ -2,20 +2,33 @@
 import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
 import poolShark from '../assets/MyKin/poolShark.jpg';
+import mykin from '../assets/MyKin/MyKinPoster.jpg';
+import liquid from '../assets/abstracts/flowliquid.jpg';
+import knightcampus from '../assets/KCShirt/kcthumbnail.png';
 import Roy from '../assets/RoyRecommends/InputController1.jpg';
 
 const pageTitle = "Kylan Curran";
 ---
 <Layout pageTitle={pageTitle}>
   <div class="card-container">
-    <a href="/" class="card">
-      <Image src={poolShark} alt="MyKin project" />
-      <div class="card-title">MyKin</div>
+    <a href="/MyKin" class="card">
+      <Image src={mykin} alt="Mykin project" loading={'eager'} />
+      <div class="card-title">Mykin</div>
     </a>
 
-    <a href="/" class="card">
-      <Image src={Roy} alt="Robot Controller project" />
-      <div class="card-title">Roy Recommends</div>
+    <a href="/Roy" class="card">
+      <Image src={knightcampus} alt="Knight Campus Tshirt" loading={'eager'}/>
+      <div class="card-title">Knight Campus Tshirt</div>
     </a>
   </div>
+  <div class="card-container">
+    <a href="/abstracts" class="card">
+      <Image src={liquid} alt="Abstract Art" loading={'eager'}/>
+      <div class="card-title">Abstracts</div>
+    </a>
+
+    <a href="/Roy" class="card">
+      <Image src={Roy} alt="Robot Controller project" loading={'eager'}/>
+      <div class="card-title">Roy Recommends</div>
+    </a>
 </Layout>
