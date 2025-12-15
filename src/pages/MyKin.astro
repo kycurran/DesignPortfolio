@@ -1,12 +1,171 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import poolshark from '../assets/MyKin/poolShark.jpg';
+import mykin from '../assets/MyKin/MyKinPoster.jpg';
+import books1 from '../assets/MyKin/MyKinTshirts/books1.jpg';
+import books2 from '../assets/MyKin/MyKinTshirts/books2-1.jpg';
+import market1 from '../assets/MyKin/MyKinTshirts/market1.jpg';
+import market2 from '../assets/MyKin/MyKinTshirts/market2-1.jpg';
+import gill1 from '../assets/MyKin/MyKinTshirts/gill1 (1).jpg';
+import gill2 from '../assets/MyKin/MyKinTshirts/gill-2.jpg';
+import cowboy1 from '../assets/MyKin/MyKinTshirts/cowboy1.jpg';
+import cowboy2 from '../assets/MyKin/MyKinTshirts/cowboy2.jpg';
+import fashion1 from '../assets/MyKin/MyKinTshirts/fashion1.jpg';
+import fashion2 from '../assets/MyKin/MyKinTshirts/fashion2.jpg';
+import fishing1 from '../assets/MyKin/MyKinTshirts/fishin1.jpg';
+import fishing2 from '../assets/MyKin/MyKinTshirts/fishin2.jpg';
+import gardens1 from '../assets/MyKin/MyKinTshirts/gardens1.jpg';
+import gardens2 from '../assets/MyKin/MyKinTshirts/gardens2.jpg';
+import pirate1 from '../assets/MyKin/MyKinTshirts/pirate1.jpg';
+import pirate2 from '../assets/MyKin/MyKinTshirts/pirate2.jpg';
+import reaper1 from '../assets/MyKin/MyKinTshirts/reaper1.jpg';
+import reaper2 from '../assets/MyKin/MyKinTshirts/reaper2.jpg';
+import shark1 from '../assets/MyKin/MyKinTshirts/shark1.jpg';
+import shark2 from '../assets/MyKin/MyKinTshirts/shark2.jpg';
 const pageTitle = "Mykin Shop";
 ---
 <Layout pageTitle={pageTitle}>
-<h2>MyKin</h2>
- <p>
-	This is the MYKIN PAGE
- </p>
+  <h2>2025 MyKin Pop-up Shop</h2>
+  <p>Mykin was a creative pop-up shop currated entirely by students with 
+    the support of Michael Salter in the University of Oregon's communication 
+    design course in Fall 2025. The shop featured student-designed t-shirts centralized 
+    under a collective theme of universal connectivity and community. Mykin was designed as a universe 
+    of characters, where each student contributed their own planet of unique characters and designs. 
+    Students were encouraged to explore their own styles and narratives while adhering to the overarching theme and 
+    contributing to the collective identity of Mykin.
+  </p>
+  <p>
+    My contribution to Mykin was a planet called "Aqualis," centered around aquatic-themed characters. The process included designing and refining
+    characters, cutting the design in vinyl, and transferring the design onto shirts using a heat press. I also contributed my ideas to the logo design, 
+    tag design, social media posts, and other print media for the shop. Overall, Mykin was a successful project that showcased the class's creativity and 
+    sold a total of 74 shirts within the two-hour pop-up shop event.
 
 
+    <div class="image-wrapper">
+    <Image 
+      src={reaper1}
+      alt="Reaper Front"
+      loading="eager"
+      class="project-image"
+    />
+        <Image 
+      src={shark1}
+      alt="Poolshark Shirt"
+      loading="eager"
+      class="project-image"
+    />
+  </div>  
+
+    <div class="image-wrapper">
+    <Image 
+      src={fishing1}
+      alt="Fishing Front"
+      loading="eager"
+      class="project-image"
+    />
+    <Image 
+      src={gardens1}
+      alt="Gardens Front"
+      loading="eager"
+      class="project-image"
+    />
+  </div>
+  
+  <div class="image-wrapper">
+    <Image 
+      src={books1}
+      alt="Deap Sea Books ver. 1"
+      loading="eager"
+      class="project-image"
+    />
+        <Image 
+      src={books2}
+      alt="Deap Sea Books ver. 2"
+      loading="eager"
+      class="project-image"
+    />
+  </div>
+    <div class="image-wrapper">
+    <Image 
+      src={market1}
+      alt="Fishman Market ver. 1"
+      loading="eager"
+      class="project-image"
+    />
+        <Image 
+      src={market2}
+      alt="Fishman Market ver. 2"
+      loading="eager"
+      class="project-image"
+    />
+  </div>
+      <div class="image-wrapper">
+    <Image 
+      src={gill1}
+      alt="Gills Coffee ver. 1"
+      loading="eager"
+      class="project-image"
+    />
+        <Image 
+      src={gill2}
+      alt="Gills Coffee ver. 2"
+      loading="eager"
+      class="project-image"
+    />
+  </div>
+    </div>
+      <div class="image-wrapper">
+    <Image 
+      src={cowboy1}
+      alt="Cowboy Front"
+      loading="eager"
+      class="project-image"
+    />
+        <Image 
+      src={cowboy2}
+      alt="Cowboy Back"
+      loading="eager"
+      class="project-image"
+    />
+  </div>
+  <div class="image-wrapper">
+    <Image 
+      src={fashion1}
+      alt="Fashion Front"
+      loading="eager"
+      class="project-image"
+    />
+        <Image 
+      src={fashion2}
+      alt="Fashion Back"
+      loading="eager"
+      class="project-image"
+    />
+  </div>
+
+  <div class="image-wrapper">
+    <Image 
+      src={pirate1}
+      alt="Pirate Front"
+      loading="eager"
+      class="project-image"
+    />
+        <Image 
+      src={pirate2}
+      alt="Pirate Back"
+      loading="eager"
+      class="project-image"
+    />
+  </div>
+
+
+  <div class="image-wrapper">
+	<Image 
+	  src={mykin}
+	  alt="MyKin Poster"
+	  loading="eager"
+	  class="project-image"
+	/>
+  </div>
 </Layout>

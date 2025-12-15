@@ -162,3 +162,19 @@ footer {
 .card:hover .card-title {
   opacity: 1;
 }
+
+
+/* PROJECT IMAGE STYLES */
+    .image-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;   /* centers horizontally */
+    }
+
+    .project-image {
+      width: min(100%, 900px);   /* responsive max width */
+      height: auto;
+      border-radius: 5px;
+      margin: 5px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }

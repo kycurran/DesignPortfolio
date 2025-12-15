@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import KCdesign from '../assets/KCShirt/KnightCampusShirt.pdf';
+import wearShirt from '../assets/KCShirt/kcshirtBob.jpg';
+const pageTitle = "Mykin Shop";
+---
+<Layout pageTitle={pageTitle}>
+  <h2>2024 Knight Campus Tshirt</h2>
+  <p>
+    In December of 2024, I had the opportunity to enter a design competition for the 2025 t-shirt for the University of Oregon's Knight Campus for Accelerating Scientific Impact. 
+    With nearly 20 submissions and over 300 guests at the end of year Knight Campus event, my design was selected as the winning entry. The design process involved researching the Knight Campus's 
+    mission and values, brainstorming concepts, and creating several iterations. My final design featured a modern and dynamic representation of scientific innovation, incorporating elements 
+    that combine the architecture of the Knight Campus with Oregon landscape all within an outline of the state to reflect the impact of the Knight Campus in Oregon's region.
+  </p>
+  <p>
+    This was a rewarding experience that allowed me to apply my design skills in a real-world context and contribute to the visual identity of a prestigious institution. 
+    The t-shirts were later distributed to Knight Campus faculty, staff, donors, and affiliates with the option of heather gray or blue shirts. 
+  </p>
+
+    <div class="image-wrapper">
+        <Image 
+        src={wearShirt}
+        alt="Knight Campus Tshirt"
+        loading="eager"
+        class="project-image"
+        />
+    </div>
+
+</Layout> 

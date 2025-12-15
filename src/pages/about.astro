@@ -1,5 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+// import selfImage from '../assets/MyKin/KylanPhoto.jpg';
+import selfImage from '../assets/kylanpic.jpg';
 const pageTitle = "Kylan Curran";
 ---
 <Layout pageTitle={pageTitle}>
@@ -18,6 +21,15 @@ const pageTitle = "Kylan Curran";
     I am also open to continuing towards a career in cybersecurity. This is a field that I found myself passionate
     about upon contributing to in my student security analyst job. 
  </p>
+
+  <div class="image-wrapper">
+    <Image 
+      src={selfImage}
+      alt="Kylan Picture"
+      loading="eager"
+      class="project-image"
+    />
+  </div>
 
 
 </Layout>
