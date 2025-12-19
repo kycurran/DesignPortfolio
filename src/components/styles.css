@@ -1,10 +1,43 @@
-html,
+/* html,
 body {
   margin: 0;
   padding: 0;
   width: 100%;
   min-height: 100%;
   background-color: #F2EFE9;
+} */
+:root {
+  --bg-color: #F2EFE9;      /* off white */
+  --text-color: #413c10;   /* green */
+}
+
+[data-theme="dark"] {
+  --bg-color: #413c10;     /* green */
+  --text-color: #F2EFE9;   /* off white */
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  background-color: var(--bg-color);
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: var(--text-color);
+  padding: 0;
+  line-height: 1;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+#theme-toggle:hover {
+  transform: rotate(12deg) scale(1.1);
 }
 
 /* BODY LAYOUT */
@@ -29,7 +62,8 @@ body {
 
 .nav-link {
   text-decoration: none;
-  color: #413c10; /* #8ABF99; */
+  /* color: #413c10; #8ABF99; */
+  color: var(--text-color);
   font-family: "area-normal", sans-serif;
   font-weight: 900;
   font-size: large;
@@ -50,7 +84,8 @@ main {
 
 /* HEADINGS */
 h1 {
-  color: #413c10;
+  /* color: #413c10; */
+  color: var(--text-color);
   font-family: "cofo-raffine", sans-serif;
   font-weight: normal;
   font-size: 5em;
@@ -59,7 +94,8 @@ h1 {
 }
 
 h2 {
-  color: inherit;
+  /* color: inherit; */
+  color: var(--text-color);
   text-align: center;
   font-family: "kudryashev-d-contrast-sans", sans-serif;
   font-weight: 400;
@@ -68,7 +104,7 @@ h2 {
 
 /* PARAGRAPHS */
 p {
-  color: inherit;
+  color: var(--text-color);
   font-family: 'Times New Roman', Times, serif;
   font-size: 18px;
   margin-top: 40px; /* adds space above paragraphs */
@@ -84,7 +120,7 @@ footer {
   text-align: center;
   padding: 10px 0;
   background-color: inherit;
-  color: inherit;
+  color: var(--text-color);
   margin-top: 20px;
   font-size: 0.9em;
   width: 100%;
@@ -126,7 +162,7 @@ footer {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(84, 89, 40, 0.8); /* #545928 with transparency */
+  background: rgba(77, 37, 37, 0.8);/*rgba(84, 89, 40, 0.8);*/ /* #545928 with transparency */
   opacity: 0;
   transition: 0.3s ease;
 }
@@ -151,7 +187,7 @@ footer {
 /* HOVER EFFECTS (ALL IN ONE PLACE) */
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 4px 15px #545928;
+  box-shadow: 0 4px 15px #3c1924;/*#545928;*/
 }
 
 .card:hover img {

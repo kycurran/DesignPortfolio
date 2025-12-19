@@ -1,0 +1,47 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import witDesign1 from '../assets/wit/wit designs1.png';
+import witDesign2 from '../assets/wit/wit designs3.png';
+import witDesign3 from '../assets/wit/wit designs2.png';
+import witDesign4 from '../assets/wit/wit designs4.png';
+const pageTitle = "Women in Technology";
+---
+<Layout pageTitle={pageTitle}>
+  <h2>Women in Technology</h2>
+  <p>I joined the Women in Technology (WIT) club at the University of Oregon in Fall 2025, 
+    where I've had the opportunity to connect with other women pursuing careers in tech as well as participate in workshops and networking events.
+    Upon joining, I was encouraged to take on the graphic design role for advertising the club and producing merchandise for the club's members.
+    The following are some of the designs that I have made for the club so far.</p>
+
+
+    <div class="image-wrapper">
+    <Image 
+      src={witDesign1}
+      alt="Poster Design 1"
+      loading="eager"
+      class="project-image"
+    />
+        <Image 
+      src={witDesign2}
+      alt="Poster Design 2"
+      loading="eager"
+      class="project-image"
+    />
+  </div>  
+      <div class="image-wrapper">
+    <Image 
+      src={witDesign3}
+      alt="Poster Design 3"
+      loading="eager"
+      class="project-image"
+    />
+        <Image 
+      src={witDesign4}
+      alt="Poster Design 4"
+      loading="eager"
+      class="project-image"
+    />
+  </div>  
+
+</Layout>

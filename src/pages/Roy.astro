@@ -1,12 +1,56 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import RoyRecommends1 from '../assets/RoyRecommends/InputController1.jpg';
+import RoyRecommends2 from '../assets/RoyRecommends/InputController2.jpg';
+import environmentBG from '../assets/RoyRecommends/robotcontrollerbase.png';
 const pageTitle = "Kylan Curran";
 ---
 <Layout pageTitle={pageTitle}>
 <h2>Roy Recommends</h2>
  <p>
-	This is the ROY PAGE
+	"Roy Recommends" is an input controller that I developed in Spring 2025 as a play on "Simon Says."
+	The project was created for a digital interativity course at the University of Oregon. I first 
+	wired the controller using an Arduino microcontroller and switches. The controller accepts
+	user input through movement of the robot's arms and head; when moved in the direction as 
+	given on the screen, Roy indicates success. If the user moves in the incorrect 
+	direction, or the incorrect limb is moved, Roy indicates failure.
  </p>
-
+ <p>
+	I programmed the controller using the Arduino IDE to read input from the switches, 
+	then connected this to a Processing sketch that displays the prompts and feedback on screen and 
+	designed a pixel art scene to represent Roy's environment in an arcade style game format. 
+ </p>
+ <p>Link to project demonstration: 
+          <a
+            href="https://www.youtube.com/shorts/YiuRN2-EFh4"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Roy Recommends
+          </a>
+ </p>
+  <div class="image-wrapper">
+    <Image 
+      src={RoyRecommends1}
+      alt="Roy Front"
+      loading="eager"
+      class="project-image"
+    />
+        <Image 
+      src={RoyRecommends2}
+      alt="Roy Back"
+      loading="eager"
+      class="project-image"
+    />
+  </div>  
+    <div class="image-wrapper">
+    <Image 
+      src={environmentBG}
+      alt="Roy Environment"
+      loading="eager"
+      class="project-image"
+    />
+	</div>
 
 </Layout>

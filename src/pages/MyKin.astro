@@ -1,8 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
-import poolshark from '../assets/MyKin/poolShark.jpg';
 import mykin from '../assets/MyKin/MyKinPoster.jpg';
+import catalog from '../assets/MyKin/Final Catalog DIGITAL 1.pdf';
 import books1 from '../assets/MyKin/MyKinTshirts/books1.jpg';
 import books2 from '../assets/MyKin/MyKinTshirts/books2-1.jpg';
 import market1 from '../assets/MyKin/MyKinTshirts/market1.jpg';
@@ -23,6 +23,9 @@ import reaper1 from '../assets/MyKin/MyKinTshirts/reaper1.jpg';
 import reaper2 from '../assets/MyKin/MyKinTshirts/reaper2.jpg';
 import shark1 from '../assets/MyKin/MyKinTshirts/shark1.jpg';
 import shark2 from '../assets/MyKin/MyKinTshirts/shark2.jpg';
+import rack from '../assets/MyKin/mykinRack.jpg';
+import teddy from '../assets/MyKin/mykinTeddy1.jpg';
+import shop from '../assets/MyKin/mykinShop.jpeg';
 const pageTitle = "Mykin Shop";
 ---
 <Layout pageTitle={pageTitle}>
@@ -40,7 +43,30 @@ const pageTitle = "Mykin Shop";
     characters, cutting the design in vinyl, and transferring the design onto shirts using a heat press. I also contributed my ideas to the logo design, 
     tag design, social media posts, and other print media for the shop. Overall, Mykin was a successful project that showcased the class's creativity and 
     sold a total of 74 shirts within the two-hour pop-up shop event.
+  </p>
+  <p>Mykin Catalog: <a href={catalog} target="_blank"
+            rel="noopener noreferrer">View PDF</a></p>
 
+  <div class="image-wrapper">
+	<Image 
+	  src={shop}
+	  alt="MyKin Space"
+	  loading="eager"
+	  class="project-image"
+	/>
+  <Image 
+    src={teddy}
+    alt="Teddy Bear"
+    loading="eager"
+    class="project-image"
+  />
+  <Image 
+    src={rack}
+    alt="MyKin Rack"
+    loading="eager"
+    class="project-image"
+  />
+  </div>
 
     <div class="image-wrapper">
     <Image 
@@ -57,16 +83,44 @@ const pageTitle = "Mykin Shop";
     />
   </div>  
 
-    <div class="image-wrapper">
+  <div class="image-wrapper">
     <Image 
-      src={fishing1}
-      alt="Fishing Front"
+      src={pirate1}
+      alt="Pirate Front"
+      loading="eager"
+      class="project-image"
+    />
+    <Image
+      src={cowboy1}
+      alt="Cowboy Front"
       loading="eager"
       class="project-image"
     />
     <Image 
-      src={gardens1}
-      alt="Gardens Front"
+      src={fashion1}
+      alt="Fashion Front"
+      loading="eager"
+      class="project-image"
+    />
+  </div>
+
+</div>
+      <div class="image-wrapper">
+    <Image 
+      src={pirate2}
+      alt="Pirate Back"
+      loading="eager"
+      class="project-image"
+    />
+    <Image 
+      src={cowboy2}
+      alt="Cowboy Back"
+      loading="eager"
+      class="project-image"
+    />
+    <Image 
+      src={fashion2}
+      alt="Fashion Back"
       loading="eager"
       class="project-image"
     />
@@ -86,7 +140,29 @@ const pageTitle = "Mykin Shop";
       class="project-image"
     />
   </div>
-    <div class="image-wrapper">
+
+      <div class="image-wrapper">
+    <Image 
+      src={fishing1}
+      alt="Fishing Front"
+      loading="eager"
+      class="project-image"
+    />
+        <Image 
+      src={gill2}
+      alt="Gills Coffee ver. 2"
+      loading="eager"
+      class="project-image"
+    />
+    <Image 
+      src={gardens1}
+      alt="Gardens Front"
+      loading="eager"
+      class="project-image"
+    />
+  </div>
+  
+  <div class="image-wrapper">
     <Image 
       src={market1}
       alt="Fishman Market ver. 1"
@@ -100,72 +176,6 @@ const pageTitle = "Mykin Shop";
       class="project-image"
     />
   </div>
-      <div class="image-wrapper">
-    <Image 
-      src={gill1}
-      alt="Gills Coffee ver. 1"
-      loading="eager"
-      class="project-image"
-    />
-        <Image 
-      src={gill2}
-      alt="Gills Coffee ver. 2"
-      loading="eager"
-      class="project-image"
-    />
-  </div>
-    </div>
-      <div class="image-wrapper">
-    <Image 
-      src={cowboy1}
-      alt="Cowboy Front"
-      loading="eager"
-      class="project-image"
-    />
-        <Image 
-      src={cowboy2}
-      alt="Cowboy Back"
-      loading="eager"
-      class="project-image"
-    />
-  </div>
-  <div class="image-wrapper">
-    <Image 
-      src={fashion1}
-      alt="Fashion Front"
-      loading="eager"
-      class="project-image"
-    />
-        <Image 
-      src={fashion2}
-      alt="Fashion Back"
-      loading="eager"
-      class="project-image"
-    />
-  </div>
 
-  <div class="image-wrapper">
-    <Image 
-      src={pirate1}
-      alt="Pirate Front"
-      loading="eager"
-      class="project-image"
-    />
-        <Image 
-      src={pirate2}
-      alt="Pirate Back"
-      loading="eager"
-      class="project-image"
-    />
-  </div>
-
-
-  <div class="image-wrapper">
-	<Image 
-	  src={mykin}
-	  alt="MyKin Poster"
-	  loading="eager"
-	  class="project-image"
-	/>
   </div>
 </Layout>

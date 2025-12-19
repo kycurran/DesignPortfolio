@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
-import KCdesign from '../assets/KCShirt/KnightCampusShirt.pdf';
+import KCdesign from '../assets/KCShirt/KC tshirt design 4.png';
 import wearShirt from '../assets/KCShirt/kcshirtBob.jpg';
 const pageTitle = "Mykin Shop";
 ---
@@ -22,6 +22,14 @@ const pageTitle = "Mykin Shop";
         <Image 
         src={wearShirt}
         alt="Knight Campus Tshirt"
+        loading="eager"
+        class="project-image"
+        />
+    </div>
+        <div class="image-wrapper">
+        <Image 
+        src={KCdesign}
+        alt="Knight Campus Tshirt design"
         loading="eager"
         class="project-image"
         />
