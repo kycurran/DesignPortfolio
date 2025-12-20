@@ -1,12 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
-import poolShark from '../assets/MyKin/poolShark.jpg';
 import mykin from '../assets/MyKin/MyKinPoster.jpg';
 import liquid from '../assets/abstracts/flowliquid.jpg';
 import knightcampus from '../assets/KCShirt/kcthumbnail.png';
 import Roy from '../assets/RoyRecommends/InputController1.jpg';
-import witPoster from '../assets/wit/wit designs1.png';
+import witPoster from '../assets/wit/wit designs4.png';
+import bears from '../assets/animation/animationThumbnail.png';
 
 const pageTitle = "Kylan Curran";
 ---
@@ -23,9 +23,9 @@ const pageTitle = "Kylan Curran";
     </a>
   </div>
   <div class="card-container">
-    <a href="/abstracts" class="card">
-      <Image src={liquid} alt="Abstract Art" loading={'eager'}/>
-      <div class="card-title">Abstracts</div>
+    <a href="/animation" class="card">
+      <Image src={bears} alt="Animation project" loading={'eager'}/>
+      <div class="card-title">Animation</div>
     </a>
 
     <a href="/Roy" class="card">
@@ -34,9 +34,9 @@ const pageTitle = "Kylan Curran";
     </a>
   </div>
   <div class="card-container">
-    <a href="/animation" class="card">
-      <Image src={poolShark} alt="Animation project" loading={'eager'}/>
-      <div class="card-title">Animation</div>
+    <a href="/abstracts" class="card">
+      <Image src={liquid} alt="Abstract Art" loading={'eager'}/>
+      <div class="card-title">Abstracts</div>
     </a>
       <a href="/wit" class="card">
       <Image src={witPoster} alt="WIT Posters" loading={'eager'}/>

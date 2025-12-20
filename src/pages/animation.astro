@@ -1,16 +1,97 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
+import loops from '../assets/animation/Loops.png';
+import robot from '../assets/animation/SceneGenre.png';
+import honey from '../assets/animation/animationThumbnail.png';
 const pageTitle = "Animation";
 ---
+
 <Layout pageTitle={pageTitle}>
   <h2>Animation</h2>
-  <p>I began exploring animation in 2024 in courses at the University of Oregon. These projects have largely been self directed, 
-    allowing creative freedom to experiment with different styles and techniques. My animation projects have been created in 
-    Adobe Illustrator, Photoshop, After Effects, Premier Pro, and Procreate. Below are some of my highlighted animation works. 
+
+  <p>
+    I began exploring animation at the start of 2024 in Art and Technology courses at the University of Oregon.
+    These projects have largely been self directed, allowing creative freedom to experiment with different styles and techniques.
+    My animation projects have been created using Adobe Illustrator, Photoshop, After Effects, Premier Pro, and Procreate.
+    Linked below are some of my highlighted animation works.
   </p>
 
   <p>
     Link: https://youtu.be/9JeE4unmKLg
   </p>
+
+  <div class="image-wrapper">
+    <a href="https://www.youtube.com/watch?v=fIcD0HkxBZs" target="_blank"
+            rel="noopener noreferrer"class="local-card">
+      <Image src={honey} alt="A Sky as Sweet as Honey Animation Link" loading="eager" />
+      <div class="local-title">A Sky as Sweet as Honey</div>
+    </a>
+  </div>
+   <div class="image-wrapper">
+    <a href="https://www.youtube.com/watch?v=9JeE4unmKLg" target="_blank"
+            rel="noopener noreferrer" class="local-card">
+      <Image src={robot} alt="Scene from a Genre Animation Link" loading="eager" />
+      <div class="local-title">Scene from a Genre</div>
+    </a>
+    <a href="https://www.youtube.com/watch?v=gRV64lsjyTA" target="_blank"
+            rel="noopener noreferrer"class="local-card" style="max-width: 50%;">
+      <Image src={loops} alt="Loops Animation Link" loading="eager" />
+      <div class="local-title">Dart Loop</div>
+    </a> 
+  </div>
+
+  <!-- LOCAL STYLES ONLY -->
+  <style>
+    .local-card {
+      position: relative;
+      display: inline-block;
+      width: min(100%, 900px);
+      margin: 5px;
+      overflow: hidden;
+      border-radius: 5px;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .local-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .local-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(77, 37, 37, 0.8);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .local-title {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "kudryashev-d-contrast-sans", sans-serif;
+      font-size: 28px;
+      color: white;
+      text-align: center;
+      opacity: 0;
+      z-index: 2;
+      transition: opacity 0.3s ease;
+    }
+
+    .local-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .local-card:hover::after,
+    .local-card:hover .local-title {
+      opacity: 1;
+    }
+  </style>
 </Layout>
